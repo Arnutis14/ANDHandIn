@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/stateTracker"
+            android:icon="@mipmap/ic_klaustukas_black_24dp"
+            android:title="State Tracker" />
+        <item
+            android:id="@+id/visitedStates"
+            android:title="Visited states" />
+
+        <item
+            android:id="@+id/allStates"
+            android:title="All states" />
+
+
+    </group>
+
+    <item android:title="Android application">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/about"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

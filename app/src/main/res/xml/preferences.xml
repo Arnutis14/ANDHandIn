@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="General settings">
+    <CheckBoxPreference
+        android:key="pref_key_auto_delete"
+        android:title="USA citizen"
+        android:summary=""
+        android:defaultValue="@string/pref_key_auto_delete" />
+    <Preference
+        android:key="pref_key_sms_delete_limit"
+        android:dependency="pref_key_auto_delete"
+        android:title="You have advantage"
+        android:summary="for you it is easier to travel in USA"
+        android:defaultValue="@string/pref_key_sms_limit_delete_default"/>
+        <ListPreference
+
+            android:key="pref_syncConnectionType"
+            android:title="@string/pref_syncConnectionType"
+            android:dialogTitle="@string/pref_syncConnectionType"
+            android:entries="@array/listentries"
+            android:entryValues="@array/listvalues"
+            android:defaultValue="@string/pref_syncConnectionType_default"
+            />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
